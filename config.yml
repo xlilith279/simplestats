@@ -1,0 +1,16 @@
+# Configuración del plugin SimpleStats
+
+# Aquí puedes configurar los mundos donde se quieren contar las estadísticas
+worlds:
+  enabled: true
+  worlds_list:
+    - world
+    - world_nether
+    - world_the_end
+
+# Configuración de estadísticas a mostrar
+stats:
+  enabled: true
+  display_deaths: true
+  display_kills: true
+  display_join: true
