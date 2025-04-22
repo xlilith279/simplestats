@@ -28,11 +28,12 @@ public class PlayerJoinHandler implements Listener {
 
         if (enabledWorldsSet.contains(player.getWorld().getName())) {
         	String playerUUIDString = playerUUID.toString();
-            if (!stats.contains("player_kills." + playerUUIDString) && !stats.contains("deaths." + playerUUIDString) && !stats.contains("mob_kills." + playerUUIDString) && !stats.contains("animals_bred." + playerUUIDString)) {
+            if (!stats.contains("player_kills." + playerUUIDString) && !stats.contains("deaths." + playerUUIDString) && !stats.contains("mob_kills." + playerUUIDString) && !stats.contains("animals_bred." + playerUUIDString) && !stats.contains("potions_brewed." + playerUUIDString)) {
                 stats.set("player_kills." + playerUUIDString, 0);
                 stats.set("deaths." + playerUUIDString, 0);
                 stats.set("mob_kills." + playerUUIDString, 0);
                 stats.set("animals_bred." + playerUUIDString, 0);
+                stats.set("potions_brewed." + playerUUIDString, 0);
                 plugin.saveStats();
             }
         }

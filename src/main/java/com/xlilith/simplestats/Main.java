@@ -24,6 +24,7 @@ public class Main extends JavaPlugin {
         new PlayerKills(this);
         new MobKills(this);
         new PlayerDeaths(this);
+        new PotionsBrewed(this);
         new PlayerJoinHandler(this);
         StatsPlaceholder statsPlaceholder = new StatsPlaceholder(this, topPlayerKills);
         statsPlaceholder.register();
@@ -145,6 +146,10 @@ class StatsPlaceholder extends PlaceholderExpansion {
         
         if (identifier.equals("animals_bred")) {
             return String.valueOf(plugin.getStatsConfig().getInt("animals_bred." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("potions_brewed")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("player_potions." + player.getUniqueId().toString(), 0));
         }
 
         if (identifier.startsWith("topkills_name_") || identifier.startsWith("topkills_kills_")) {
