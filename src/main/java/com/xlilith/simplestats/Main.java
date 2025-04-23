@@ -8,6 +8,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import com.xlilith.simplestats.Tools.*;
 import com.xlilith.simplestats.Food.*;
+import com.xlilith.simplestats.Farming.*;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -76,6 +77,25 @@ public class Main extends JavaPlugin {
         new MilkBucketConsumed(this);
         new HoneyBottleConsumed(this);
         new PotionConsumed(this);
+        new AcaciaSaplingPlanted(this);
+        new BirchSaplingPlanted(this);
+        new CherrySaplingPlanted(this);
+        new DarkOakSaplingPlanted(this);
+        new JungleSaplingPlanted(this);
+        new OakSaplingPlanted(this);
+        new SpruceSaplingPlanted(this);
+        new BambooHarvested(this);
+        new BeetrootHarvested(this);
+        new CarrotHarvested(this);
+        new CocoaBeansHarvested(this);
+        new MelonHarvested(this);
+        new NetherWartHarvested(this);
+        new PotatoHarvested(this);
+        new PumpkinHarvested(this);
+        new SugarCaneHarvested(this);
+        new SweetBerriesHarvested(this);
+        new TorchflowerHarvested(this);
+        new WheatHarvested(this);
         new PlayerJoinHandler(this);
         StatsPlaceholder statsPlaceholder = new StatsPlaceholder(this, topPlayerKills);
         statsPlaceholder.register();
@@ -386,6 +406,130 @@ class StatsPlaceholder extends PlaceholderExpansion {
 
         if (identifier.equals("potions_consumed")) {
             return String.valueOf(plugin.getStatsConfig().getInt("potions_consumed." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("acacia_sapling_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("acacia_sapling_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("birch_sapling_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("birch_sapling_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("oak_sapling_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("oak_sapling_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("dark_oak_sapling_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("dark_oak_sapling_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("spruce_sapling_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("spruce_sapling_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("jungle_sapling_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("jungle_sapling_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("cherry_sapling_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("cherry_sapling_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("wheat_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("wheat_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("wheat_harvested")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("wheat_harvested." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("bamboo_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("bamboo_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("bamboo_harvested")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("bamboo_harvested." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("beetroot_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("beetroot_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("beetroot_harvested")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("beetroot_harvested." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("carrot_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("carrot_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("carrot_harvested")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("carrot_harvested." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("cocoa_beans_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("cocoa_beans_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("cocoa_beans_harvested")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("cocoa_beans_harvested." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("melon_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("melon_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("melon_harvested")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("melon_harvested." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("nether_wart_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("nether_wart_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("nether_wart_harvested")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("nether_wart_harvested." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("potato_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("potato_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("potato_harvested")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("potato_harvested." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("pumpkin_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("pumpkin_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("pumpkin_harvested")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("pumpkin_harvested." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("sugar_cane_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("sugar_cane_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("sugar_cane_harvested")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("sugar_cane_harvested." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("sweet_berries_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("sweet_berries_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("sweet_berries_harvested")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("sweet_berries_harvested." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("torchflower_planted")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("torchflower_planted." + player.getUniqueId().toString(), 0));
+        }
+
+        if (identifier.equals("torchflower_harvested")) {
+            return String.valueOf(plugin.getStatsConfig().getInt("torchflower_harvested." + player.getUniqueId().toString(), 0));
         }
 
         if (identifier.startsWith("topkills_name_") || identifier.startsWith("topkills_kills_")) {

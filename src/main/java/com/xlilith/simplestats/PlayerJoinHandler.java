@@ -283,6 +283,161 @@ public class PlayerJoinHandler implements Listener {
                 stats.set("potions_consumed." + playerUUIDString, 0);
                 plugin.saveStats();
             }
+            
+            if (!stats.contains("acacia_sapling_planted." + playerUUIDString)) {
+                stats.set("acacia_sapling_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("birch_sapling_planted." + playerUUIDString)) {
+                stats.set("birch_sapling_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("oak_sapling_planted." + playerUUIDString)) {
+                stats.set("oak_sapling_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("dark_oak_sapling_planted." + playerUUIDString)) {
+                stats.set("dark_oak_sapling_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("spruce_sapling_planted." + playerUUIDString)) {
+                stats.set("spruce_sapling_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("jungle_sapling_planted." + playerUUIDString)) {
+                stats.set("jungle_sapling_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("cherry_sapling_planted." + playerUUIDString)) {
+                stats.set("cherry_sapling_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("wheat_planted." + playerUUIDString)) {
+                stats.set("wheat_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("wheat_harvested." + playerUUIDString)) {
+                stats.set("wheat_harvested." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("bamboo_planted." + playerUUIDString)) {
+                stats.set("bamboo_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("bamboo_harvested." + playerUUIDString)) {
+                stats.set("bamboo_harvested." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("beetroot_planted." + playerUUIDString)) {
+                stats.set("beetroot_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("beetroot_harvested." + playerUUIDString)) {
+                stats.set("beetroot_harvested." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("carrot_planted." + playerUUIDString)) {
+                stats.set("carrot_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("carrot_harvested." + playerUUIDString)) {
+                stats.set("carrot_harvested." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("cocoa_beans_planted." + playerUUIDString)) {
+                stats.set("cocoa_beans_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("cocoa_beans_harvested." + playerUUIDString)) {
+                stats.set("cocoa_beans_harvested." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("melon_planted." + playerUUIDString)) {
+                stats.set("melon_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("melon_harvested." + playerUUIDString)) {
+                stats.set("melon_harvested." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("nether_wart_planted." + playerUUIDString)) {
+                stats.set("nether_wart_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("nether_wart_harvested." + playerUUIDString)) {
+                stats.set("nether_wart_harvested." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("potato_planted." + playerUUIDString)) {
+                stats.set("potato_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("potato_harvested." + playerUUIDString)) {
+                stats.set("potato_harvested." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("pumpkin_planted." + playerUUIDString)) {
+                stats.set("pumpkin_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("pumpkin_harvested." + playerUUIDString)) {
+                stats.set("pumpkin_harvested." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("sugar_cane_planted." + playerUUIDString)) {
+                stats.set("sugar_cane_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("sugar_cane_harvested." + playerUUIDString)) {
+                stats.set("sugar_cane_harvested." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("sweet_berries_planted." + playerUUIDString)) {
+                stats.set("sweet_berries_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("sweet_berries_harvested." + playerUUIDString)) {
+                stats.set("sweet_berries_harvested." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("torchflower_planted." + playerUUIDString)) {
+                stats.set("torchflower_planted." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
+            
+            if (!stats.contains("torchflower_harvested." + playerUUIDString)) {
+                stats.set("torchflower_harvested." + playerUUIDString, 0);
+                plugin.saveStats();
+            }
         }
     }
 }
