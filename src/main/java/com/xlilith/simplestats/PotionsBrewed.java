@@ -1,3 +1,10 @@
+/*
+ * 
+ *  fred, 21/04/2025
+ * 
+ */
+
+
 package com.xlilith.simplestats;
 
 import org.bukkit.Bukkit;
