@@ -38,8 +38,18 @@ import com.xlilith.simplestats.Ranks.Productor.Ingeniero.PlanksCraft;
 import com.xlilith.simplestats.Ranks.Productor.Ingeniero.RedstoneActuatorsCraft;
 import com.xlilith.simplestats.Ranks.Productor.Ingeniero.StonecutterUse;
 import com.xlilith.simplestats.Ranks.Productor.Mago.BookshelfSlotFill;
+import com.xlilith.simplestats.Ranks.Productor.Mago.ItemEnchant;
 import com.xlilith.simplestats.Ranks.Productor.Mago.PotionConsume;
 import com.xlilith.simplestats.Ranks.Productor.Mago.PotionsBrewed;
+import com.xlilith.simplestats.Ranks.Recolector.Granjero.AnimalKill;
+import com.xlilith.simplestats.Ranks.Recolector.Granjero.CowSheepInteract;
+import com.xlilith.simplestats.Ranks.Recolector.Granjero.FarmerInteract;
+import com.xlilith.simplestats.Ranks.Recolector.Granjero.FoodHarvest;
+import com.xlilith.simplestats.Ranks.Recolector.Minero.BlockMining;
+import com.xlilith.simplestats.Ranks.Recolector.Minero.OreSmelt;
+import com.xlilith.simplestats.Ranks.Recolector.Minero.RailPlace;
+import com.xlilith.simplestats.Ranks.Recolector.Pescador.CatchStats;
+import com.xlilith.simplestats.Ranks.Recolector.Pescador.FishermanTrade;
 import com.xlilith.simplestats.Farming.*;
 
 import org.bukkit.command.Command;
@@ -174,6 +184,22 @@ public class Main extends JavaPlugin {
         new PotionsBrewed(this);
         new PotionConsume(this);
         new BookshelfSlotFill(this);
+        new ItemEnchant(this);
+
+        // Pescador
+        new CatchStats(this);
+        new FishermanTrade(this);
+
+        // Granjero
+        new AnimalKill(this);
+        new CowSheepInteract(this);
+        new FarmerInteract(this);
+        new FoodHarvest(this);
+
+        // Minero
+        new BlockMining(this);
+        new OreSmelt(this);
+        new RailPlace(this);
 
         // -----------
 

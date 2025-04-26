@@ -48,7 +48,7 @@ public class PotionsBrewed implements Listener {
         UUID uuid = brewer.getUniqueId();
         FileConfiguration stats = ((Main) plugin).getStatsConfig();
 
-        String path = "player_potions." + uuid;
+        String path = "potions_brewed." + uuid;
         int currentPotions = stats.getInt(path, 0);
         stats.set(path, currentPotions + 1);
         ((Main) plugin).saveStats();

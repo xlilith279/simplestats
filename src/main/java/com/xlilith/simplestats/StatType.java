@@ -142,7 +142,30 @@ public enum StatType {
     ENCHANTS_BOOK("enchants_book"),
     ENCHANTS_ARMOR("enchants_armor"),
     ENCHANTS_WEAPON("enchants_weapon"),
-    ENCHANTS_TOOL("enchants_tool");
+    ENCHANTS_TOOL("enchants_tool"),
+
+    // Pescador
+    FISH_CAUGHT("fish_caught"),
+    TREASURE_CAUGHT("treasure_caught"),
+    JUNK_CAUGHT("junk_caught"),
+    FISH_FOR_EMERALD_TRADES("fish_for_emerald_trades"),
+
+    // Granjero
+    BONE_MEAL_USED("bone_meal_used"),
+    HOE_USED("hoe_used"),
+    COMPOSTER_USED("composter_used"),
+    CROPS_HARVESTED("crops_harvested"),
+    COWS_MILKED("cows_milked"),
+    SHEEP_SHEARED("sheep_sheared"),
+    FARM_ANIMALS_KILLED("farm_animals_killed"),
+
+    // Minero
+    STONE_MINED("stone_mined"),
+    ORE_MINED("ore_mined"),
+    ORE_SMELTED("ore_smelted"),
+    RAILS_PLACED("rails_placed"),
+
+    ;
 
     // más
 

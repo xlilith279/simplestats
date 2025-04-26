@@ -39,7 +39,7 @@ public class BlocksPlaced implements Listener {
         add(stats, "constructor_blocks_placed." + uuid);
 
         // 2. Categoría redstone basada en propiedades físicas
-        if (placed.isOccluding()) {
+        if (placed.isSolid()) {
             add(stats, "redstone_solid_blocks_placed." + uuid);
         } else {
             add(stats, "redstone_transparent_blocks_placed." + uuid);
