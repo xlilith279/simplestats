@@ -5,7 +5,7 @@
  */
 
 
-package com.xlilith.simplestats;
+package com.xlilith.simplestats.Ranks.Productor.Mago;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -14,6 +14,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.BrewEvent;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import com.xlilith.simplestats.Main;
 
 import java.util.List;
 import java.util.UUID;

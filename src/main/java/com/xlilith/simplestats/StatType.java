@@ -8,7 +8,6 @@ public enum StatType {
     DEATHS("deaths"),
     MOB_KILLS("mob_kills"),
     ANIMALS_BRED("animals_bred"),
-    POTIONS_BREWED("potions_brewed"),
     SWORDS_USED("swords_used"),
     PICKAXES_USED("pickaxes_used"),
     AXES_USED("axes_used"),
@@ -117,8 +116,34 @@ public enum StatType {
     HOGLIN_KILLS("hoglin_kills"),
     SHIELD_BLOCKS("shield_blocks"),
     SWEEPING_ATTACKS("sweeping_attacks"),
-    MOB_CRITICAL_HITS("mob_critical_hits");
+    MOB_CRITICAL_HITS("mob_critical_hits"),
     
+    // Cocinero
+    FOOD_IN_BARREL("food_in_barrel"),
+    FISH_COOKED("fish_cooked"),
+    MEAT_COOKED("meat_cooked"),
+    STEWS_CRAFTED("stews_crafted"),
+    VEGGIES_COOKED("veggies_cooked"),
+
+    // Ingeniero
+    PLANKS_CRAFTED("planks_crafted"),
+    STONECUTTER_USED("stonecutter_used"),
+    REDSTONE_COMPONENTS_CRAFTER("redstone_components_crafted"),
+    MACHINES_CRAFTER("machines_crafted"),
+    CONSTRUCTOR_BLOCKS_PLACED("constructor_blocks_placed"),
+    REDSTONE_SOLID_BLOCKS_PLACED("redstone_solid_blocks_placed"),
+    REDSTONE_TRANSPARENT_BLOCKS_PLACED("redstone_transparent_blocks_placed"),
+
+    // Mago
+    POTIONS_BREWED("potions_brewed"),
+    POTIONS_DRANK("potions_drank"),
+    BOOKSHELF_SLOTS_FILLED("bookshelf_slots_filled"),
+    XP_USED_ENCHANT("xp_used_enchant"),
+    ENCHANTS_BOOK("enchants_book"),
+    ENCHANTS_ARMOR("enchants_armor"),
+    ENCHANTS_WEAPON("enchants_weapon"),
+    ENCHANTS_TOOL("enchants_tool");
+
     // más
 
     private final String key;

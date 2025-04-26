@@ -8,6 +8,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import com.xlilith.simplestats.Tools.*;
 import com.xlilith.simplestats.Food.*;
+import com.xlilith.simplestats.Ranks.Productor.Ingeniero.RedstoneComponentsCraft;
 import com.xlilith.simplestats.Ranks.Actuador.Asesino.AxeKill;
 import com.xlilith.simplestats.Ranks.Actuador.Asesino.CriticalHit;
 import com.xlilith.simplestats.Ranks.Actuador.Asesino.DamageToPoisonedPlayer;
@@ -27,6 +28,18 @@ import com.xlilith.simplestats.Ranks.Actuador.Explorador.CompassTimeTracker;
 import com.xlilith.simplestats.Ranks.Actuador.Explorador.FoodConsume;
 import com.xlilith.simplestats.Ranks.Actuador.Explorador.InspectSuspiciousBlock;
 import com.xlilith.simplestats.Ranks.Actuador.Explorador.MapDraw;
+import com.xlilith.simplestats.Ranks.Productor.Cocinero.BarrelFoodStore;
+import com.xlilith.simplestats.Ranks.Productor.Cocinero.FishCooked;
+import com.xlilith.simplestats.Ranks.Productor.Cocinero.MeatCooked;
+import com.xlilith.simplestats.Ranks.Productor.Cocinero.SuspiciousStewCraft;
+import com.xlilith.simplestats.Ranks.Productor.Cocinero.VeggiesCooked;
+import com.xlilith.simplestats.Ranks.Productor.Ingeniero.BlocksPlaced;
+import com.xlilith.simplestats.Ranks.Productor.Ingeniero.PlanksCraft;
+import com.xlilith.simplestats.Ranks.Productor.Ingeniero.RedstoneActuatorsCraft;
+import com.xlilith.simplestats.Ranks.Productor.Ingeniero.StonecutterUse;
+import com.xlilith.simplestats.Ranks.Productor.Mago.BookshelfSlotFill;
+import com.xlilith.simplestats.Ranks.Productor.Mago.PotionConsume;
+import com.xlilith.simplestats.Ranks.Productor.Mago.PotionsBrewed;
 import com.xlilith.simplestats.Farming.*;
 
 import org.bukkit.command.Command;
@@ -49,7 +62,6 @@ public class Main extends JavaPlugin {
         new MobKills(this);
         new PlayerDeaths(this);
         new AnimalsBred(this);
-        new PotionsBrewed(this);
         new SwordsUsed(this);
         new PickaxesUsed(this);
         new AxesUsed(this);
@@ -143,6 +155,25 @@ public class Main extends JavaPlugin {
         new PveKillTracker(this);
         new ShieldBlockCount(this);
         new SweepingAttackTracker(this);
+
+        // Cocinero
+        new BarrelFoodStore(this);
+        new FishCooked(this);
+        new MeatCooked(this);
+        new SuspiciousStewCraft(this);
+        new VeggiesCooked(this);
+
+        // Ingeniero
+        new PlanksCraft(this);
+        new StonecutterUse(this);
+        new RedstoneComponentsCraft(this);
+        new RedstoneActuatorsCraft(this);
+        new BlocksPlaced(this);
+
+        // Mago
+        new PotionsBrewed(this);
+        new PotionConsume(this);
+        new BookshelfSlotFill(this);
 
         // -----------
 
