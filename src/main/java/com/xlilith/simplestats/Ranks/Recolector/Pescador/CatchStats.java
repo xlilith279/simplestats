@@ -1,5 +1,5 @@
 /*
- *  CatchStats – Listener único para peces, tesoros y basura.
+ *
  *  fred, 27/04/2025
  */
 package com.xlilith.simplestats.Ranks.Recolector.Pescador;
@@ -26,11 +26,13 @@ public class CatchStats implements Listener {
     );
     private static final Set<Material> TREASURE_ITEMS = Set.of(
         Material.BOW, Material.ENCHANTED_BOOK, Material.NAME_TAG,
-        Material.NAUTILUS_SHELL, Material.SADDLE
+        Material.NAUTILUS_SHELL, Material.SADDLE, Material.FISHING_ROD
     );
     private static final Set<Material> JUNK_ITEMS = Set.of(
         Material.ROTTEN_FLESH, Material.STRING, Material.BONE,
-        Material.LEATHER_BOOTS, Material.POTION
+        Material.LEATHER_BOOTS, Material.POTION, Material.LEATHER,
+        Material.LILY_PAD, Material.BOWL, Material.STICK,
+        Material.INK_SAC, Material.TRIPWIRE_HOOK
     );
 
     public CatchStats(Main plugin) {

@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.UUID;
 import org.bukkit.*;
 import org.bukkit.block.Block;
+import org.bukkit.block.data.Ageable;
+import org.bukkit.block.data.BlockData;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -37,15 +39,15 @@ public class FarmerInteract implements Listener {
         FileConfiguration cfg = plugin.getStatsConfig();
 
         // ---- Polvo de hueso ------------------------------------------------
-        if (item.getType() == Material.BONE_MEAL &&
-            e.getAction() == Action.RIGHT_CLICK_BLOCK) {
-            inc(cfg, "bone_meal_used." + id);
-        }
+        if (item.getType() == Material.BONE_MEAL
+                && e.getAction() == Action.RIGHT_CLICK_BLOCK
+                && block != null) {
 
-        // ---- Cualquier azada ----------------------------------------------
-        if (item.getType().name().endsWith("_HOE") &&
-            e.getAction() == Action.RIGHT_CLICK_BLOCK) {
-            inc(cfg, "hoe_used." + id);
+            BlockData data = block.getBlockData();
+            if (data instanceof Ageable ageable
+                    && ageable.getAge() < ageable.getMaximumAge()) {
+                inc(cfg, "bone_meal_used." + id);   // solo cuenta si realmente surte efecto
+            }
         }
 
         // ---- Composter -----------------------------------------------------

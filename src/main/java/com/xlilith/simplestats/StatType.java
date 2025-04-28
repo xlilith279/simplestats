@@ -12,7 +12,6 @@ public enum StatType {
     PICKAXES_USED("pickaxes_used"),
     AXES_USED("axes_used"),
     SHOVELS_USED("shovels_used"),
-    HOES_USED("hoes_used"),
     APPLES_EATEN("apples_eaten"),
     BAKED_POTATOES_EATEN("baked_potatoes_eaten"),
     BEETROOTS_EATEN("beetroots_eaten"),
@@ -152,7 +151,7 @@ public enum StatType {
 
     // Granjero
     BONE_MEAL_USED("bone_meal_used"),
-    HOE_USED("hoe_used"),
+    HOES_USED("hoes_used"),
     COMPOSTER_USED("composter_used"),
     CROPS_HARVESTED("crops_harvested"),
     COWS_MILKED("cows_milked"),

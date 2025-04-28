@@ -80,7 +80,7 @@
 
   <build>
     <plugins>
-      <!-- Compiler Plugin -->
+      <!-- compilador -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -91,22 +91,11 @@
         </configuration>
       </plugin>
 
-      <!-- Shade Plugin -->
+      <!-- jar simple -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-shade-plugin</artifactId>
-        <version>3.2.4</version>
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals>
-              <goal>shade</goal>
-            </goals>
-            <configuration>
-              <createDependencyReducedPom>false</createDependencyReducedPom>
-            </configuration>
-          </execution>
-        </executions>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.2.0</version>
       </plugin>
     </plugins>
   </build>

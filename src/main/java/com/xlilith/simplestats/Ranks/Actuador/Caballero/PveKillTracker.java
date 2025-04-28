@@ -28,9 +28,9 @@ public class PveKillTracker implements Listener {
     // Define grupos de tipos
     private static final Set<EntityType> UNDEAD = Set.of(
         EntityType.ZOMBIE, EntityType.SKELETON, EntityType.WITHER_SKELETON,
-        EntityType.HUSK, EntityType.DROWNED, EntityType.WITHER_SKELETON,
+        EntityType.HUSK, EntityType.DROWNED, EntityType.BOGGED,
         EntityType.PHANTOM, EntityType.ZOGLIN, EntityType.ZOMBIE_VILLAGER,
-        EntityType.STRAY, EntityType.BOGGED
+        EntityType.STRAY
     );
     private static final Set<EntityType> ARTHROPODS = Set.of(
         EntityType.SPIDER, EntityType.CAVE_SPIDER, EntityType.SILVERFISH,
